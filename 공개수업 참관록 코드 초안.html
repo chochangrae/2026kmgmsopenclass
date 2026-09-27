@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026학년도 OO중학교 학부모 공개수업 안내</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f6f9;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .info-table th, .info-table td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+        }
+
+        .info-table th {
+            width: 30%;
+            background-color: #f8f9fa;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            background-color: var(--accent-color);
+            color: white;
+            text-align: center;
+            padding: 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.2s;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        .btn-secondary {
+            background-color: #27ae60;
+        }
+        .btn-secondary:hover {
+            background-color: #219150;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.85rem;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>2026학년도 OO중학교</h1>
+        <p>학부모 공개수업 온라인 안내서</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- 1. 행사 개요 -->
+        <div class="card">
+            <h2>📌 행사 개요</h2>
+            <table class="info-table">
+                <tr>
+                    <th>일시</th>
+                    <td>2026년 O월 O일(수) 13:30 ~ 15:20</td>
+                </tr>
+                <tr>
+                    <th>대상</th>
+                    <td>전 학년 학부모님</td>
+                </tr>
+                <tr>
+                    <th>장소</th>
+                    <td>각 학급 교실 및 전공실</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 2. 온라인 서명부 (Google Form 연동) -->
+        <div class="card">
+            <h2>✍️ 1. 학부모 등록 및 서명부</h2>
+            <p>원활한 등록 및 참여 확인을 위해 아래 버튼을 눌러 온라인 등록(서명)을 진행해 주세요.</p>
+            <a href="https://forms.google.com/YOUR_FORM_ID_1" target="_blank" class="btn">온라인 서명 등록하기</a>
+        </div>
+
+        <!-- 3. 시간표 및 수업 안내 -->
+        <div class="card">
+            <h2>📚 2. 공개수업 일정 및 시간표</h2>
+            <table class="info-table">
+                <thead>
+                    <tr>
+                        <th>교시/시간</th>
+                        <th>교과 / 단원명</th>
+                        <th>장소</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5교시<br>(13:30~14:15)</td>
+                        <td>국어: 시의 표현 기법<br>수학: 일차방정식의 활용</td>
+                        <td>1-1 교실<br>1-2 교실</td>
+                    </tr>
+                    <tr>
+                        <td>6교시<br>(14:25~15:10)</td>
+                        <td>과학: 물질의 상태 변화<br>영어: Unit 4. Special Days</td>
+                        <td>과학실<br>2-1 교실</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 4. 참관록 작성 (Google Form 연동) -->
+        <div class="card">
+            <h2>📝 3. 수업 참관록 작성</h2>
+            <p>학생들의 성장과 수업 발전을 위해 소중한 의견을 남겨주시면 감사하겠습니다.</p>
+            <a href="https://forms.google.com/YOUR_FORM_ID_2" target="_blank" class="btn btn-secondary">수업 참관록 작성하기</a>
+        </div>
+
+        <!-- 5. 안내사항 -->
+        <div class="card">
+            <h2>📢 유의사항</h2>
+            <ul style="padding-left: 20px; line-height: 1.8;">
+                <li>수업 진행 중에는 정숙을 유지해 주시기 바랍니다.</li>
+                <li>사진 및 동영상 촬영은 학생 및 교사의 초상권 보호를 위해 자제해 주세요.</li>
+                <li>주차 공간이 협소하오니 대중교통 이용을 권장합니다.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 OO중학교. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
